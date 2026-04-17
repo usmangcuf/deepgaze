@@ -11,7 +11,7 @@ import os
 import random
 import re
 import tempfile
-from dotenv import load_dotenv,find_dotenv,load_dotenv
+#from dotenv import load_dotenv,find_dotenv,load_dotenv
 import streamlit as st
 from google import genai
 from google.genai import types
