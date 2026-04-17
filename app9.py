@@ -30,7 +30,7 @@ def call_llm(img:Image, prompt: str)->str:
     #load_dotenv(dotenv_path)
     #my_google_key=os.getenv("GOOGLE_API_KEY")
 
-    client=genai.Client(api_key=GOOGLE_API_KEY)
+    client=genai.Client(api_key="AIzaSyCdDYab_CPnynRMMxZav_0OJ6Mr_yrnicM")
     response=client.models.generate_content(
         model="gemini-2.5-flash-lite",
         contents=[prompt, img],
