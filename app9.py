@@ -26,11 +26,11 @@ def call_llm(img:Image, prompt: str)->str:
     system_prompt="""
     
     """
-    dotenv_path=find_dotenv()
-    load_dotenv(dotenv_path)
-    my_google_key=os.getenv("GOOGLE_API_KEY")
+    #dotenv_path=find_dotenv()
+    #load_dotenv(dotenv_path)
+    #my_google_key=os.getenv("GOOGLE_API_KEY")
 
-    client=genai.Client(api_key=my_google_key)
+    client=genai.Client(api_key=GOOGLE_API_KEY)
     response=client.models.generate_content(
         model="gemini-2.5-flash-lite",
         contents=[prompt, img],
